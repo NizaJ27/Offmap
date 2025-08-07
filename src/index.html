@@ -6,11 +6,149 @@
   <meta name="description" content="Free insider tips and in-depth travel guides by YourName.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="images/og-cover.jpg">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <style>
+    body {
+      background: var(--sand-50);
+      color: var(--text-primary);
+      font-family: 'Inter', system-ui, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .site-header h1 {
+      color: #233c2c;
+      font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: var(--space-m);
+    }
+    .btn-primary {
+      background: #233c2c;
+      color: #fff;
+      border-radius: var(--radius);
+      font-weight: 600;
+      border: none;
+    }
+    .btn-secondary {
+      background: #dbe7d0;
+      color: #233c2c;
+      border-radius: var(--radius);
+      font-weight: 600;
+      border: 2px solid #233c2c;
+    }
+    .testimonial-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-card);
+      padding: var(--space-m);
+      max-width: 260px;
+      min-width: 200px;
+      text-align: left;
+    }
+    .cta-final {
+      background: #dbe7d0;
+      color: #233c2c;
+      border-radius: var(--radius);
+      padding: var(--space-l) var(--space-m);
+      margin: var(--space-l) auto;
+      max-width: 600px;
+    }
+    .site-footer nav a {
+      color: #00546e;
+    }
+    .avatar img {
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      margin-bottom: var(--space-s);
+    }
+    /* Accent for icons/highlights */
+    .guide-icon {
+      filter: drop-shadow(0 2px 4px #f6c96b);
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>Coming Soon</h1>
-    <p>Sign up for free first-stop tips &amp; launch updates.</p>
-  </main>
+  <header class="site-header">
+    <h1>Discover and Explore the World’s Hidden Corners</h1>
+    <p>Unlock free guides and premium insider tips for 5 iconic destinations.</p>
+    <div class="hero-map">
+      <img src="images/map-hero.svg" alt="Map with Lisbon, Rome, Chiang Mai, Tokyo" />
+      <ul class="destinations">
+        <li>Lisbon</li>
+        <li>Rome</li>
+        <li>Chiang Mai</li>
+        <li>Tokyo</li>
+      </ul>
+    </div>
+    <div class="cta-buttons">
+      <a href="destinations.html" class="btn btn-secondary">Get Free Guide</a>
+      <a href="destinations.html#paid-tips" class="btn btn-primary">Explore Paid Tips</a>
+    </div>
+  </header>
+
+  <section class="as-seen-in">
+    <p>As seen in top travel communities:</p>
+    <ul class="community-logos">
+      <li><img src="images/nomadicmatt.svg" alt="Nomadic Matt"></li>
+      <li><img src="images/lonelyplanet.svg" alt="Lonely Planet"></li>
+      <li><img src="images/reddit.svg" alt="Reddit"></li>
+      <li><img src="images/gumroad.svg" alt="Gumroad"></li>
+      <li><img src="images/indiehackers.svg" alt="Indie Hackers"></li>
+    </ul>
+  </section>
+
+  <section class="insider-wisdom">
+    <h2>Insider Travel Wisdom, Backed by Local Know-How</h2>
+    <p>Every guide is packed with curated insights — from cultural etiquette to hidden photo spots.</p>
+    <a href="destinations.html#sample-tips" class="btn btn-primary">View Sample Tips</a>
+    <img src="images/guide-icon.svg" alt="Guidebook and compass icon" class="guide-icon">
+  </section>
+
+  <section class="testimonials">
+    <h2>Here’s What Explorers Like You Are Saying</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <div class="avatar"><img src="images/avatar1.png" alt="Explorer testimonial avatar"></div>
+        <div class="testimonial-content">
+          <strong>JORDAN LEE</strong>
+          <p>“Offmap helped me find a hidden-food tour in Rome I’d never have known about!”</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="avatar"><img src="images/avatar2.png" alt="Explorer testimonial avatar"></div>
+        <div class="testimonial-content">
+          <strong>PRIYA SINGH</strong>
+          <p>Perfect for solo travelers. The Tokyo section made me feel totally prepared.”</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="avatar"><img src="images/avatar3.png" alt="Explorer testimonial avatar"></div>
+        <div class="testimonial-content">
+          <strong>LUCA MARTINEZ</strong>
+          <p>Loved the ethioid travel tips in the Chiang MAI guide. So thoughtful!”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <h2>Ready to Go Off the Beaten Path?</h2>
+    <p>Let Offmap guide your next unforgettable journey.</p>
+    <a href="contact.html" class="btn btn-primary">Get Started Free</a>
+  </section>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="legal/privacy-policy.md">Privacy Policy</a> |
+      <a href="legal/terms-of-service.md">Terms of Service</a> |
+      <a href="legal/accessibility-statement.md">Accessibility</a> |
+      <a href="legal/cookie-policy.md">Cookie Policy</a>
+    </nav>
+    <p>&copy; 2025 Offmap. All rights reserved.</p>
+  </footer>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

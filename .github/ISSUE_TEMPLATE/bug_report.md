@@ -2,6 +2,7 @@
 name: Bug report
 about: Report a bug to help us improve Offmap
 labels: type:bug
+assignees: NizaJ27
 ---
 
 **Describe the bug**
