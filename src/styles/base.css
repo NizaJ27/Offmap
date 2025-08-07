@@ -3,30 +3,36 @@
 body {
   background: #f6f3e8;
   color: var(--text-primary);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: Inter, system-ui, sans-serif;
   margin: 0;
   line-height: 1.6;
 }
+
 .site-header, .site-footer {
   background: #f6f3e8;
 }
+
 .site-header {
   padding: var(--space-l) var(--space-m) var(--space-m) var(--space-m);
   text-align: center;
 }
+
 .site-header h1 {
   color: var(--brand-900);
   font-size: 2.5rem;
   margin-bottom: var(--space-m);
 }
+
 .site-header p {
   font-size: 1.25rem;
   margin-bottom: var(--space-m);
 }
+
 .hero-map {
   margin: var(--space-l) auto;
   max-width: 400px;
 }
+
 .destinations {
   display: flex;
   justify-content: space-around;
@@ -36,9 +42,11 @@ body {
   color: var(--brand-700);
   font-weight: bold;
 }
+
 .cta-buttons {
   margin: var(--space-m) 0;
 }
+
 .btn {
   display: inline-block;
   padding: var(--space-s) var(--space-l);
@@ -50,26 +58,32 @@ body {
   transition: background 0.2s, color 0.2s;
   box-shadow: var(--shadow-card);
 }
+
 .btn-primary {
   background: var(--brand-900);
   color: #fff;
 }
+
 .btn-primary:hover {
   background: var(--brand-700);
 }
+
 .btn-secondary {
   background: var(--sand-50);
   color: var(--brand-900);
   border: 2px solid var(--brand-900);
 }
+
 .btn-secondary:hover {
   background: var(--brand-400);
   color: #fff;
 }
+
 .as-seen-in {
   text-align: center;
   margin: var(--space-l) 0;
 }
+
 .community-logos {
   display: flex;
   justify-content: center;
@@ -78,10 +92,12 @@ body {
   padding: 0;
   margin: var(--space-s) 0 0 0;
 }
+
 .community-logos img {
   height: 32px;
   opacity: 0.7;
 }
+
 .insider-wisdom {
   background: #fff;
   padding: var(--space-l) var(--space-m);
@@ -91,18 +107,22 @@ body {
   max-width: 600px;
   box-shadow: var(--shadow-card);
 }
+
 .insider-wisdom h2 {
   color: var(--brand-900);
 }
+
 .guide-icon {
   margin-top: var(--space-m);
   width: 64px;
 }
+
 .testimonials {
   background: var(--sand-50);
   padding: var(--space-l) var(--space-m);
   text-align: center;
 }
+
 .testimonial-cards {
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +130,7 @@ body {
   gap: var(--space-m);
   margin-top: var(--space-m);
 }
+
 .testimonial-card {
   background: #fff;
   border-radius: var(--radius);
@@ -119,6 +140,7 @@ body {
   min-width: 200px;
   text-align: left;
 }
+
 .avatar img {
   border-radius: 50%;
   width: 48px;
@@ -126,6 +148,7 @@ body {
   object-fit: cover;
   margin-bottom: var(--space-s);
 }
+
 .cta-final {
   background: var(--brand-400);
   color: #fff;
@@ -135,31 +158,38 @@ body {
   margin: var(--space-l) auto;
   max-width: 600px;
 }
+
 .cta-final h2 {
   margin-top: 0;
 }
+
 .site-footer {
   text-align: center;
   font-size: 0.95rem;
   color: var(--brand-700);
   margin: var(--space-l) 0 var(--space-m) 0;
 }
+
 .site-footer nav a {
   color: var(--brand-700);
   text-decoration: none;
   margin: 0 var(--space-s);
 }
+
 .site-footer nav a:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 700px) {
   .testimonial-cards {
     flex-direction: column;
     align-items: center;
   }
+
   .hero-map {
     max-width: 100%;
   }
+
   .cta-final, .insider-wisdom {
     max-width: 100%;
   }
