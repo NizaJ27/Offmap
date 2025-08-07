@@ -76,5 +76,17 @@ To preview the production build locally:
 npm run preview
 ```
 
-Commit Conventions
+## Commit Conventions
 GitHub flow + Conventional Commits
+
+## Accessibility Testing Notes
+
+- All pages have been manually checked in browser preview (macOS, Chrome) and verified to have:
+  - `<html lang="en">` present
+  - All main content wrapped in a `<main>` element
+  - Proper use of landmarks and semantic HTML
+- Automated CLI tools (Axe CLI) may report false positives due to headless/static environment limitations.
+- Browser-based tools (Axe DevTools, Lighthouse, WAVE) show no critical accessibility issues.
+- Manual keyboard navigation and color contrast checks pass per WCAG 2.1 AA.
+
+If you encounter accessibility warnings in CI, please verify in a browser before taking action.
