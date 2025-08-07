@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'src',
+  base: '/offmap/', // Set base path for GitHub Pages
   build: {
     outDir: '../dist',
     emptyOutDir: true,

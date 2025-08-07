@@ -17,6 +17,9 @@
     .btn-primary:hover { background: #00546e; }
     .site-header, .site-footer { text-align: center; }
     .site-footer nav a { color: #00546e; }
+    .contact-intro { max-width: 800px; margin: var(--space-l) auto; padding: var(--space-l); background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-card); }
+    .contact-intro h2 { font-size: 1.5rem; margin-bottom: var(--space-s); }
+    .contact-intro ul { list-style-type: disc; margin-left: 2rem; }
   </style>
 </head>
 <body>
@@ -25,6 +28,19 @@
     <p>We love hearing from fellow explorers! Use the form below or email <a href="mailto:hello@offmap.com">hello@offmap.com</a>.</p>
   </header>
   <main>
+    <section class="contact-intro">
+      <h2>How You Can Help Offmap</h2>
+      <p>
+        We love hearing from fellow travelers! Use this form to:
+        <ul>
+          <li>Let us know if a featured place has changed, closed, or isn’t as described</li>
+          <li>Suggest new destinations or hidden gems for our next guide</li>
+          <li>Warn us (and others) about places to avoid or that no longer meet expectations</li>
+          <li>Share general feedback or partnership ideas</li>
+        </ul>
+        Your input keeps Offmap up-to-date and authentic for everyone.
+      </p>
+    </section>
     <form class="contact-form" name="contact" method="POST" data-netlify="true">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>

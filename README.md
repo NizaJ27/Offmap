@@ -19,13 +19,61 @@ A travel-vlogger-built hub offering free insider tips and premium deep-dive city
 - [ ] Phase 10 – Post-Launch
 
 ## Directory Map
-<tree here>
+```
+/ (root)
+  README.md
+  LICENSE
+  package.json
+  vite.config.js
+  docs/
+    business-analysis.md
+    audience-personas.md
+    development_plan.md
+    content-assets.md
+    brand-style-guides.md
+    design-spec-wireframes.md
+    tech-architecture.md
+    image-assets.md
+  src/
+    index.html
+    404.html
+    destinations.html
+    contact.html
+    lisbon.html
+    rome.html
+    chiangmai.html
+    tokyo.html
+    newyork.html
+    lebanon.html
+    images/
+    legal/
+      privacy-policy.md
+      terms-of-service.md
+      accessibility-statement.md
+      cookie-policy.md
+    scripts/
+      main.js
+    styles/
+      base.css
+      tokens.css
+```
 
 ## Quick Start
 ```bash
-git clone …
-cd offmap/src
-npx serve
+git clone https://github.com/NizaJ27/offmap.git
+cd offmap
+npm install
+npm run dev
+```
+
+To build for production:
+```bash
+npm run build
+```
+
+To preview the production build locally:
+```bash
+npm run preview
 ```
 
 Commit Conventions
